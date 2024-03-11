@@ -1,0 +1,60 @@
+﻿const baseUrl = "https://localhost:7036/api/";
+
+async function getQuestion() {
+    const subject = document.getElementById("subject").value;
+    const level = document.getElementById("levels").value;
+    const language = document.getElementById("languages").value;
+
+    const prompt = {
+        "Subject": subject,
+        "Level": level,
+        "Language": language
+    };
+
+    const url = baseUrl + "GPT/GPTChat";
+    const params = {
+        method: 'POST',
+        headers: {
+            Accept: 'application/json',
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(prompt)
+    };
+
+    try {
+        const response = await fetch(url, params);
+        if (response.ok) {
+            const { content } = await response.json();
+            // Предполагая, что content является строкой JSON, разбираем её
+            const data = JSON.parse(content);
+
+            const questionsList = document.getElementById("questions");
+            questionsList.innerHTML = ""; // Очищаем существующий список вопросов
+
+            // Итерация по массиву вопросов
+            data.questions.forEach(questionData => {
+                const questionItem = document.createElement("li");
+                const questionText = document.createTextNode(questionData.question);
+                questionItem.appendChild(questionText);
+                questionsList.appendChild(questionItem);
+
+                // Создание списка для ответов
+                const answerList = document.createElement("ol");
+                questionData.answers.forEach(answer => {
+                    const answerItem = document.createElement("li");
+                    const answerTextNode = document.createTextNode(answer);
+                    answerItem.appendChild(answerTextNode);
+                    answerList.appendChild(answerItem);
+                });
+
+                // Добавление списка ответов к вопросу
+                questionsList.appendChild(answerList);
+            });
+        } else {
+            console.log("Ошибка при получении данных");
+        }
+    } catch (error) {
+        console.error("Ошибка при выполнении запроса:", error);
+    }
+}
+

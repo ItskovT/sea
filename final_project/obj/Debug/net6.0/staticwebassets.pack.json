@@ -1,0 +1,89 @@
+{
+  "Files": [
+    {
+      "Id": "/Users/taliya/Downloads/final_project/wwwroot/.DS_Store",
+      "PackagePath": "staticwebassets/.DS_Store"
+    },
+    {
+      "Id": "/Users/taliya/Downloads/final_project/wwwroot/bored.html",
+      "PackagePath": "staticwebassets/bored.html"
+    },
+    {
+      "Id": "/Users/taliya/Downloads/final_project/wwwroot/bored.html~",
+      "PackagePath": "staticwebassets/bored.html~"
+    },
+    {
+      "Id": "/Users/taliya/Downloads/final_project/wwwroot/css/bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets/css/bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "/Users/taliya/Downloads/final_project/wwwroot/css/styles.css",
+      "PackagePath": "staticwebassets/css/styles.css"
+    },
+    {
+      "Id": "/Users/taliya/Downloads/final_project/wwwroot/css/styles.css~",
+      "PackagePath": "staticwebassets/css/styles.css~"
+    },
+    {
+      "Id": "/Users/taliya/Downloads/final_project/wwwroot/images/anchor.svg",
+      "PackagePath": "staticwebassets/images/anchor.svg"
+    },
+    {
+      "Id": "/Users/taliya/Downloads/final_project/wwwroot/images/button_menu.svg",
+      "PackagePath": "staticwebassets/images/button_menu.svg"
+    },
+    {
+      "Id": "/Users/taliya/Downloads/final_project/wwwroot/images/logo.png",
+      "PackagePath": "staticwebassets/images/logo.png"
+    },
+    {
+      "Id": "/Users/taliya/Downloads/final_project/wwwroot/index.html",
+      "PackagePath": "staticwebassets/index.html"
+    },
+    {
+      "Id": "/Users/taliya/Downloads/final_project/wwwroot/js/bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets/js/bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "/Users/taliya/Downloads/final_project/wwwroot/js/javascript.js",
+      "PackagePath": "staticwebassets/js/javascript.js"
+    },
+    {
+      "Id": "/Users/taliya/Downloads/final_project/wwwroot/js/javascriptBored.js",
+      "PackagePath": "staticwebassets/js/javascriptBored.js"
+    },
+    {
+      "Id": "/Users/taliya/Downloads/final_project/wwwroot/js/javascript_openai.js",
+      "PackagePath": "staticwebassets/js/javascript_openai.js"
+    },
+    {
+      "Id": "/Users/taliya/Downloads/final_project/wwwroot/js/javascript_openai.js~",
+      "PackagePath": "staticwebassets/js/javascript_openai.js~"
+    },
+    {
+      "Id": "/Users/taliya/Downloads/final_project/wwwroot/openai.html",
+      "PackagePath": "staticwebassets/openai.html"
+    },
+    {
+      "Id": "/Users/taliya/Downloads/final_project/wwwroot/openai.html~",
+      "PackagePath": "staticwebassets/openai.html~"
+    },
+    {
+      "Id": "obj/Debug/net6.0/staticwebassets/msbuild.Prog3_WebApi_Javascript.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Debug/net6.0/staticwebassets/msbuild.build.Prog3_WebApi_Javascript.props",
+      "PackagePath": "build\\Prog3_WebApi_Javascript.props"
+    },
+    {
+      "Id": "obj/Debug/net6.0/staticwebassets/msbuild.buildMultiTargeting.Prog3_WebApi_Javascript.props",
+      "PackagePath": "buildMultiTargeting\\Prog3_WebApi_Javascript.props"
+    },
+    {
+      "Id": "obj/Debug/net6.0/staticwebassets/msbuild.buildTransitive.Prog3_WebApi_Javascript.props",
+      "PackagePath": "buildTransitive\\Prog3_WebApi_Javascript.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

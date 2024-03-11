@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="utf-8" />
+    <title>תכנות 3 - שיעור API</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+
+    <!-- CSS -->
+    <link href="css/bootstrap.rtl.min.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap&subset=hebrew" rel="stylesheet">
+
+    <!-- JS -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/javascript_openai.js"></script>
+</head>
+<body>
+    <header>
+        <div class="d-flex justify-content-between align-items-center p-3">
+            <!-- Company Logo -->
+            <a class="company-logo">
+                <img src="images/logo.png" alt="Company Logo">
+            </a>
+
+            <!-- Hamburger Menu Button -->
+            <a class="menu-button">
+                <img src="images/button_menu.svg">
+            </a>
+        </div>
+    </header>
+
+    <!-- Content -->
+    <div class="content">
+        <p class="name-company">מועדון שייט דרך הים</p>
+        <p class="slogan-company">אין קיצורי דרך</p>
+        <span class="description-company">עשורים על הים לימדו אותנו שהוא מאתגר הרבה יותר מכפי שנראה מהחוף. כדי שתוכלו ליהנות ממנו בידיעה שתתמודדו עם כל הפתעה, המקצועיות הכרחית. עבורנו - היא מעל הכל.</span>
+        <p class="call-to-action">רוצים ללמוד עוד קצת על הים? תבחרו את הנושא ובידקו את עצמיכם!</p>
+    </div>
+
+    <div class="pass">
+        <img src="images/anchor.svg">
+    </div>
+
+    <div id="container">
+
+        <div class="choice">
+            <div class="form-group">
+                <label for="subject">בחר/י נושא: </label>
+                <select name="subject" id="subject">
+                    <option value="sailing according to the wind conditions">תמרון הסירה בהתאם לתנאי הרוח</option>
+                    <option value="navigate to a point in the see">ניווט הסירה אל נקודה בים</option>
+                    <option value="Pointing sails">כיוון מפרשים</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="levels">בחר/י רמה: </label>
+                <select name="levels" id="levels">
+                    <option value="Elementary School">בית ספר יסודי</option>
+                    <option value="middle School"> חטיבה</option>
+                    <option value="High School">תיכון</option>
+                    <option value="university">תואר ראשון</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="languages">בחר/י שפה: </label>
+                <select name="languages" id="languages">
+                    <option value="Hebrew">עברית</option>
+                    <option value="Arabic">ערבית</option>
+                    <option value="English">אנגלית</option>
+                </select>
+            </div>
+        </div>
+
+
+        <button id="generate-button" class="button_yellow" onclick="getQuestion()">יצירת שאלות</button>
+        <ol id="questions" class="questions_block"></ol>
+        <ol id="answers"></ol>
+    </div>
+
+    
+
+    <div class="pass">
+        <img src="images/anchor.svg">
+    </div>
+
+    <footer class="footer">
+        <img src="images/logo.png" alt="Company Logo">
+        <p>פרשים הינו מיזם ללא כוונת רווח שתכליתו פעילות חינוכית-טיפולית-מגשרת באמצעות מסע ימי קבוצתי, בכלי שיט ייחודי.</p>
+    </footer>
+</body>
+</html>
